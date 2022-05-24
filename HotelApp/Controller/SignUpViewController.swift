@@ -2,8 +2,8 @@
 //  SignUpViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 06/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
@@ -19,7 +19,7 @@ class SignUpViewController: UIViewController {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "HotelApp"
+        label.text = "Қоңақ үй Қосымшасы"
         label.textColor = UIColor.white
         label.font = UIFont.boldSystemFont(ofSize: 36)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -29,7 +29,7 @@ class SignUpViewController: UIViewController {
     
     let fullNameTf: UITextField = {
         let tf = UITextField()
-        tf.attributedPlaceholder = NSAttributedString(string: "Full Name",
+        tf.attributedPlaceholder = NSAttributedString(string: "Аты-жөні",
                                                       attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         tf.borderStyle = .none
         tf.textAlignment = .center
@@ -39,7 +39,7 @@ class SignUpViewController: UIViewController {
     
     let mailTf: UITextField = {
         let tf = UITextField()
-        tf.attributedPlaceholder = NSAttributedString(string: "Email",
+        tf.attributedPlaceholder = NSAttributedString(string: "Пошта",
                                                       attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         tf.borderStyle = .none
         tf.textAlignment = .center
@@ -49,7 +49,7 @@ class SignUpViewController: UIViewController {
     
     let phoneTf: UITextField = {
         let tf = UITextField()
-        tf.attributedPlaceholder = NSAttributedString(string: "Phone Number",
+        tf.attributedPlaceholder = NSAttributedString(string: "Телефон номері",
                                                       attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         tf.borderStyle = .none
         tf.textAlignment = .center
@@ -59,7 +59,7 @@ class SignUpViewController: UIViewController {
     
     let passwordTf: UITextField = {
         let tf = UITextField()
-        tf.attributedPlaceholder = NSAttributedString(string: "Password",
+        tf.attributedPlaceholder = NSAttributedString(string: "Құпия сөз",
                                                       attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         tf.borderStyle = .none
         tf.textAlignment = .center
@@ -89,7 +89,7 @@ class SignUpViewController: UIViewController {
     
     let signUpButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Sign Up", for: .normal)
+        button.setTitle("Тіркелу", for: .normal)
         button.backgroundColor = UIColor.orange
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 30
@@ -101,7 +101,7 @@ class SignUpViewController: UIViewController {
     
     lazy var SignInLabel: UILabel = {
         let label = UILabel()
-        label.text = "Already a Member? Sign In"
+        label.text = "Тіркелгеңсіз бе? Кіру"
         label.textColor = UIColor.white
         label.font = UIFont.systemFont(ofSize: 17)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -131,7 +131,7 @@ class SignUpViewController: UIViewController {
         if  fullNameTf.text != "" && mailTf.text != "" && phoneTf.text != "" && passwordTf.text != "" {
         ApiService.sharedInstance.saveUser(user: User(full_name: fullNameTf.text, email: mailTf.text, phone_number: phoneTf.text, password: passwordTf.text))
         } else {
-            self.displayAlert(title: "", message: "please complete all fields")
+            self.displayAlert(title: "", message: "Барлық жолдарды толтырыңыз")
         }
     }
     

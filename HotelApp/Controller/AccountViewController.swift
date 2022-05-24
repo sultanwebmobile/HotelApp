@@ -2,8 +2,8 @@
 //  AccountViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 12/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
@@ -122,7 +122,7 @@ class AccountViewController: UIViewController {
     
     func setupNavigationBar() {
         navigationController?.navigationBar.isHidden = false
-        navigationItem.title = "Account"
+        navigationItem.title = "Аккаунт"
         navigationController?.navigationBar.barTintColor = UIColor.orange
         navigationController?.navigationBar.tintColor = UIColor.white
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]

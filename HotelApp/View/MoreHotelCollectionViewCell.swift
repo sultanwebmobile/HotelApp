@@ -2,8 +2,8 @@
 //  MoreHotelCollectionViewCell.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 10/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+//  
+
 //
 
 import UIKit
@@ -33,7 +33,7 @@ class MoreHotelCollectionViewCell: UICollectionViewCell {
     let roomLabel: UILabel = {
        let rl = UILabel()
         rl.translatesAutoresizingMaskIntoConstraints = false
-        rl.text = "Special Room"
+        rl.text = "Арнайы бөлме"
         rl.textColor = UIColor.darkGray
         rl.font = UIFont.systemFont(ofSize: 13)
         return rl
@@ -86,7 +86,7 @@ class MoreHotelCollectionViewCell: UICollectionViewCell {
     let nightLabel: UILabel = {
         let rl = UILabel()
         rl.translatesAutoresizingMaskIntoConstraints = false
-        rl.text = "1 night"
+        rl.text = "1 түн"
         rl.textColor = UIColor.darkGray
         rl.font = UIFont.systemFont(ofSize: 13)
         return rl
@@ -122,7 +122,7 @@ class MoreHotelCollectionViewCell: UICollectionViewCell {
               hotelNameLabel.text = name
             }
             if let price = hotel?.price {
-                priceLabel.text = "\(price)$"
+                priceLabel.text = "\(price) ₸"
             }
             if let numberOfStars = hotel?.number_of_stars {
                 if numberOfStars == 3 {

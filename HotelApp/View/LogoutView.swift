@@ -2,8 +2,8 @@
 //  LogoutView.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 12/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
@@ -23,7 +23,7 @@ class LogoutView: UIView {
     
     let logoutLabel :UILabel = {
        let ll = UILabel()
-        ll.text = "Logout"
+        ll.text = "Шығу"
         ll.textColor = UIColor.white
         ll.textAlignment = .center
         ll.font = UIFont.boldSystemFont(ofSize: 15)
@@ -33,7 +33,7 @@ class LogoutView: UIView {
     
     let descriptionLabel: UILabel = {
        let dl = UILabel()
-        dl.text = "Are you sure you want to logout?"
+        dl.text = "Шығуға сенімдісіз бе?"
         dl.textColor = UIColor.black
         dl.textAlignment = .center
         dl.font = UIFont.systemFont(ofSize: 15)
@@ -43,7 +43,7 @@ class LogoutView: UIView {
     
     let okButton: UIButton = {
        let button = UIButton()
-        button.setTitle("Ok", for: .normal)
+        button.setTitle("Иә", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.backgroundColor = UIColor.orange
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -55,7 +55,7 @@ class LogoutView: UIView {
     
     let cancelButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Cancel", for: .normal)
+        button.setTitle("Болдырмау", for: .normal)
         button.setTitleColor(UIColor.white, for: .normal)
         button.backgroundColor = UIColor.orange
         button.translatesAutoresizingMaskIntoConstraints = false

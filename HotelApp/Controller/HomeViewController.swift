@@ -2,8 +2,8 @@
 //  HomeViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 08/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
@@ -12,11 +12,14 @@ class HomeViewController: UIViewController {
     
     var searchTextField: UITextField = {
        let stf = UITextField()
-        stf.placeholder = "Search"
+        stf.placeholder = "Іздеу"
         stf.borderStyle = .none
+        stf.textColor = UIColor.darkGray
         stf.layer.cornerRadius = 30
+        stf.layoutMargins = UIEdgeInsets(top: 30, left: 64, bottom: 20, right: 0)
         stf.clipsToBounds = true
         stf.setLeftPaddingPoints(20)
+        
         stf.layer.borderWidth = 2
         stf.layer.borderColor = UIColor.orange.cgColor
         stf.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +87,7 @@ class HomeViewController: UIViewController {
     }()
     
     let cityId = "cityId"
-    let cityArray = [City(name: "New York",imageName: "newyork"),City(name: "Paris",imageName: "paris"),City(name: "London",imageName: "london"),City(name: "Dubai",imageName: "dubai"),City(name: "London",imageName: "london"),City(name: "New York",imageName: "newyork")]
+    let cityArray = [City(name: "Алматы",imageName: "newyork"),City(name: "Нұр-Султан",imageName: "paris"),City(name: "Ақтау",imageName: "london"),City(name: "Бұрабай",imageName: "dubai"),City(name: "Өскемен",imageName: "london"),City(name: "Түркістан",imageName: "newyork")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -158,9 +161,13 @@ class HomeViewController: UIViewController {
     
     func setupNavigationBar() {
         navigationController?.navigationBar.isHidden = false
-        navigationItem.title = "Home"
+        navigationItem.title = "Басты бет"
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.barTintColor = .purple
+        navigationController?.navigationBar.layoutMargins = UIEdgeInsets(top: 0, left: 64, bottom: 20, right: 0)
+        navigationController?.navigationBar.backgroundColor = UIColor.orange
         navigationController?.navigationBar.barTintColor = UIColor.orange
-        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.tintColor = UIColor.orange
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .plain, target: self, action: #selector(showNavigationDrawer))
         leftBarButtonItem.tintColor = UIColor.white

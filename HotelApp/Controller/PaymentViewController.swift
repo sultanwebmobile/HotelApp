@@ -2,8 +2,8 @@
 //  PaymentViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 09/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+//  
+
 //
 
 import UIKit
@@ -33,7 +33,7 @@ class PaymentViewController:UIViewController {
     }
     
     func setupNavigationBar() {
-        navigationItem.title = "Make Payment"
+        navigationItem.title = "Төлем жасау"
     }
     
     func setupView() {

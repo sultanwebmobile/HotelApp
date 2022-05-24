@@ -2,8 +2,8 @@
 //  MoreHotelViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 10/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+//  
+
 //
 
 import UIKit
@@ -36,7 +36,7 @@ class MoreHotelViewController: UIViewController,UICollectionViewDelegate,UIColle
     }
     
     func setupNavigationBar() {
-        navigationItem.title = "Recommended Hotels"
+        navigationItem.title = "Ұсынылған қоңақ үйлер"
     }
     
     func setupConstraints() {

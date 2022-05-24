@@ -1,10 +1,4 @@
-//
-//  MenuCollectionViewCell.swift
-//  HotelApp
-//
-//  Created by Omar Thamri on 11/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
-//
+
 
 import UIKit
 
@@ -24,7 +18,8 @@ class MenuCollectionViewCell: UICollectionViewCell {
     var imageView: UIImageView = {
        let iv = UIImageView()
         iv.image = UIImage(named: "home")
-        iv.tintColor = UIColor.darkGray
+        iv.tintColor = UIColor.black
+        iv.backgroundColor = UIColor.white
         iv.contentMode = .scaleToFill
         iv.clipsToBounds = true
         iv.translatesAutoresizingMaskIntoConstraints = false
@@ -33,7 +28,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
     
     var nameLabel: UILabel = {
        let nl = UILabel()
-        nl.text = "Home"
+        nl.text = "Басты бет"
         nl.textColor = UIColor.darkGray
         nl.font = UIFont.boldSystemFont(ofSize: 14)
         nl.translatesAutoresizingMaskIntoConstraints = false

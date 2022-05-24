@@ -2,8 +2,8 @@
 //  HotelDetailViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 09/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+//  
+
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class HotelDetailViewController: UIViewController {
             hotelNameLabel.text = name
             }
             if let price = hotel?.price {
-                priceLabel.text = "\(price)$"
+                priceLabel.text = "\(price) ₸"
             }
             if let hotel_description = hotel?.hotel_description {
                 hotelDescriptionLabel.text = hotel_description
@@ -26,7 +26,7 @@ class HotelDetailViewController: UIViewController {
             }
            
             if let numberOfStars = hotel?.number_of_stars {
-                hotelStarLabel.text = "\(numberOfStars) star hotel"
+                hotelStarLabel.text = "\(numberOfStars) жұлдызды қоңақ үй"
                 if numberOfStars == 3 {
                     fiveStarImageView.isHidden = true
                     fourthStarImageView.isHidden = true
@@ -129,7 +129,7 @@ class HotelDetailViewController: UIViewController {
         label.textColor = UIColor.darkGray
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "Nights"
+        label.text = "Түндер"
         return label
    }()
     
@@ -138,7 +138,7 @@ class HotelDetailViewController: UIViewController {
         label.textColor = UIColor.darkGray
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "Rooms"
+        label.text = "Бөлмелер"
         return label
    }()
     
@@ -147,7 +147,7 @@ class HotelDetailViewController: UIViewController {
         label.textColor = UIColor.darkGray
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 16)
-        label.text = "Date"
+        label.text = "Күн"
         return label
    }()
 
@@ -181,7 +181,7 @@ class HotelDetailViewController: UIViewController {
     
     let bookButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Book Now", for: .normal)
+        button.setTitle("Брондаңыз", for: .normal)
         button.backgroundColor = UIColor.orange
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 30
@@ -223,7 +223,7 @@ class HotelDetailViewController: UIViewController {
     }
     
     func setupNavigationBar() {
-    navigationItem.title = "Hotel Details"
+    navigationItem.title = "Қоңақ үй ақпараты"
     }
     
     func setupConstraints() {

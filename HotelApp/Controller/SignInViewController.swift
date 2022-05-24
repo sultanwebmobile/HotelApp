@@ -2,8 +2,8 @@
 //  SignInViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 06/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
@@ -31,7 +31,7 @@ class SignInViewController: UIViewController {
     
     let mailTf: UITextField = {
        let tf = UITextField()
-        tf.attributedPlaceholder = NSAttributedString(string: "Email Or Phone",
+        tf.attributedPlaceholder = NSAttributedString(string: "Пошта немес Телефон номер",
                                                         attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         tf.borderStyle = .none
         tf.textAlignment = .center
@@ -41,7 +41,7 @@ class SignInViewController: UIViewController {
     
     let passwordTf: UITextField = {
         let tf = UITextField()
-        tf.attributedPlaceholder = NSAttributedString(string: "Password",
+        tf.attributedPlaceholder = NSAttributedString(string: "Құпия сөз",
                                                       attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         tf.borderStyle = .none
         tf.textAlignment = .center
@@ -61,7 +61,7 @@ class SignInViewController: UIViewController {
     
     let signInButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Sign In", for: .normal)
+        button.setTitle("Кіру", for: .normal)
         button.backgroundColor = UIColor.orange
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 30
@@ -73,7 +73,7 @@ class SignInViewController: UIViewController {
     
     let ForgotPasswordLabel: UILabel = {
         let label = UILabel()
-        label.text = "Forgot Password?"
+        label.text = "Құпия сөзді ұмыттыңыз ба?"
         label.textColor = UIColor.white
         label.font = UIFont.systemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -83,7 +83,7 @@ class SignInViewController: UIViewController {
     
      lazy var SignUpLabel: UILabel = {
         let label = UILabel()
-        label.text = "Sign Up"
+        label.text = "Тіркелу"
         label.textColor = UIColor.white
         label.font = UIFont.systemFont(ofSize: 20)
         label.translatesAutoresizingMaskIntoConstraints = false

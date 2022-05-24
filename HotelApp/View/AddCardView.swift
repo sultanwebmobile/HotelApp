@@ -2,8 +2,8 @@
 //  AddCardView.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 10/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+//  
+
 //
 
 import UIKit
@@ -24,7 +24,7 @@ class AddCardView: UIView {
     let cardNumberLabel: UILabel = {
         let cnl = UILabel()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Credit Card Number"
+        cnl.text = "Банк картасының номері"
         cnl.font = UIFont.systemFont(ofSize: 13)
         cnl.translatesAutoresizingMaskIntoConstraints = false
         return cnl
@@ -50,7 +50,7 @@ class AddCardView: UIView {
     let cardOwnerLabel: UILabel = {
         let cnl = UILabel()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Credit Card Owner"
+        cnl.text = "Банк картасының иесі"
         cnl.font = UIFont.systemFont(ofSize: 13)
         cnl.translatesAutoresizingMaskIntoConstraints = false
         return cnl
@@ -59,7 +59,7 @@ class AddCardView: UIView {
     let cardOwnerTf: UITextField = {
         let cnl = UITextField()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Omar Thamri"
+        cnl.text = "Zharqyn Qasym"
         cnl.borderStyle = .none
         cnl.font = UIFont.boldSystemFont(ofSize: 15)
         cnl.translatesAutoresizingMaskIntoConstraints = false
@@ -76,7 +76,7 @@ class AddCardView: UIView {
     let issuedLabel: UILabel = {
         let cnl = UILabel()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Issue On"
+        cnl.text = "Шығарылған уақыты"
         cnl.font = UIFont.systemFont(ofSize: 13)
         cnl.translatesAutoresizingMaskIntoConstraints = false
         return cnl
@@ -102,7 +102,7 @@ class AddCardView: UIView {
     let expireLabel: UILabel = {
         let cnl = UILabel()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Expire On"
+        cnl.text = "мерзімінің аяқталуы"
         cnl.font = UIFont.systemFont(ofSize: 13)
         cnl.translatesAutoresizingMaskIntoConstraints = false
         return cnl
@@ -127,7 +127,7 @@ class AddCardView: UIView {
     
     let addCardButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Add New Card", for: .normal)
+        button.setTitle("Жаңа картаны қосу", for: .normal)
         button.backgroundColor = UIColor.orange
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 30
@@ -144,7 +144,7 @@ class AddCardView: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder:) іске асырылмады")
     }
     
     func setupView() {

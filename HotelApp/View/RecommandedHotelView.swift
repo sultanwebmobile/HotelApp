@@ -2,8 +2,8 @@
 //  RecommandedHotelView.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 08/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
@@ -13,7 +13,7 @@ class RecommandedHotelView: UIView {
     let recommendedCellId = "recommendedCellId"
     let recommendedHotelLabel: UILabel = {
        let rhv = UILabel()
-        rhv.text = "Recommended Hotels"
+        rhv.text = "Ұсынылған қоңақ үйлер"
         rhv.textColor = UIColor.darkGray
         rhv.translatesAutoresizingMaskIntoConstraints = false
         rhv.font = UIFont.boldSystemFont(ofSize: 16)
@@ -24,7 +24,7 @@ class RecommandedHotelView: UIView {
     
     lazy var ViewMoreLabel: UILabel = {
         let vml = UILabel()
-        vml.text = "View More"
+        vml.text = "Қарау"
         vml.textColor = UIColor.darkGray
         vml.translatesAutoresizingMaskIntoConstraints = false
         vml.font = UIFont.systemFont(ofSize: 13)
@@ -45,7 +45,7 @@ class RecommandedHotelView: UIView {
         return rhcv
     }()
     
-    let recommendedHotels = [Hotel(name: "DZH Health Resort Club",imageName: "DZH_Health_Resort_Club",price:40,number_of_stars: 3,hotel_description: "Featuring a restaurant and a 24-hour front desk, DZH Health Resort Club offers basic accommodations located 6.2 mi from Genting Highlands. Free WiFi is accessible throughout and free parking is provided. Fitted with air conditioning or fan-cooled, every room comes with a flat-screen TV The private bathroom has free toiletries and a hairdryer. Guests can enjoy a meal at the Chinese Restaurant, set above the fish pond. Guests also can experience the Chinese traditional Aye treatment at the Aye treatment center. "),Hotel(name: "Best Western Bowery Hanbee Hotel",imageName: "Best_Western_Bowery_Hanbee_Hotel",price:220,number_of_stars: 5, hotel_description: "Choose this completely non-smoking hotel in New York City, located next to the subway and major local attractions such as Canal Street, Chinatown and Little Italy. Welcome to the Best Western Bowery Hanbee Hotel, which offers exceptional customer service and accommodations at an affordable rate. This New York City hotel features well-appointed guest rooms and suites, each featuring cable satellite television with HBO® and free wireless high-speed Internet."),Hotel(name: "Hotel Paris Louvre Opera",imageName: "Hotel_Paris_Louvre_Opera",price:170,number_of_stars: 5, hotel_description: "The Paris Opera Louvre Hotel is an elegant establishment occupying a magnificent 17th-century building just a 5-minute walk from the famous Louvre Museum and Opéra Garnier. All rooms are air conditioned and soundproofed. Guests enjoy free Wi-Fi and a free minibar with free drinks and snacks.")]
+    let recommendedHotels = [Hotel(name: "Almaty Health Resort Club",imageName: "DZH_Health_Resort_Club",price:40000,number_of_stars: 3,hotel_description: "Мейрамханасы бар Almaty Health Resort Club қонақ үйі Genting Highlands-тен 6,2 шақырым қашықтықта орналасқан негізгі нөмірлерді ұсынады. Тегін WiFi қонақ үйдің барлық аумағында қолжетімді және тегін тұрақ беріледі. Әр нөмірде жазық экранды теледидар бар. Ванна бөлмесінде тегін дәретхана керек-жарақтары мен фен бар. Қонақтар балық тоғанының үстінде орналасқан қытайлық мейрамханада кешкі асты тамашалай алады. Сондай-ақ, қонақтар Ае емдеу орталығында қытайлық дәстүрлі шипа емін  алады. "),Hotel(name: "Best Western Atakent Hotel",imageName: "Best_Western_Bowery_Hanbee_Hotel",price:22000,number_of_stars: 5, hotel_description: "Алматыдағы метро мен Шымбұлақ, Шарың және Медеу сияқты негізгі жергілікті көрікті орындардың жанында орналасқан осы темекі шекпейтін қонақ үйді таңдаңыз. Клиенттерге ерекше қызмет көрсетуді және қолжетімді бағамен орналастыруды ұсынатын Best Western Bowery Hanbee Hotel-ге қош келдіңіздер. Нью-Йорктегі бұл қонақ үйде жақсы жабдықталған нөмірлер мен HBO® кабельді спутниктік теледидары және тегін сымсыз жоғары жылдамдықты интернет бар апартаменттер бар."),Hotel(name: "Hotel Astana Opera",imageName: "Hotel_Paris_Louvre_Opera",price:17000,number_of_stars: 5, hotel_description: "Astana Opera  қонақ үйі 21 ғасырдың әсем ғимаратында орналасқан. Барлық нөмірлер ауа баптағышпен және дыбыс оқшаулағышпен жабдықталған. Қонақтарға тегін Wi-Fi және тегін сусындар мен тамақтары бар шағын-бар беріледі.")]
     
     override init(frame: CGRect) {
         super.init(frame: frame)

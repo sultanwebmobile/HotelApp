@@ -2,8 +2,8 @@
 //  CardView.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 09/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+//  
+
 //
 
 import UIKit
@@ -52,7 +52,7 @@ class CardView: UIView {
         cnvl.translatesAutoresizingMaskIntoConstraints = false
         cnvl.textColor = UIColor.white
         cnvl.font = UIFont.boldSystemFont(ofSize: 15)
-        cnvl.text = "Omar Thamri"
+        cnvl.text = "Zharqyn Qasym"
         return cnvl
     }()
     

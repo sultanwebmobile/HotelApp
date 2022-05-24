@@ -2,14 +2,17 @@
 //  ViewController.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 06/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
 
 class ViewController: UIViewController {
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     var backgroundImage: UIImageView = {
         let image = UIImageView(image: UIImage(named: "Hotel"))
         image.contentMode = .scaleAspectFill
@@ -19,9 +22,9 @@ class ViewController: UIViewController {
     
     let titleLabel: UILabel = {
        let label = UILabel()
-        label.text = "HotelApp"
-        label.textColor = UIColor.white
-        label.font = UIFont.boldSystemFont(ofSize: 36)
+        label.text = "Қонақ үй Қосымшасы"
+        label.textColor = UIColor.black
+        label.font = UIFont.boldSystemFont(ofSize: 26)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         return label
@@ -29,7 +32,7 @@ class ViewController: UIViewController {
     
     let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Book your room today and you’ll get our lowest price"
+        label.text = "Нөмірді қазір брондап, ең төмен бағада орналасыңыз"
         label.textColor = UIColor.white
         label.font = UIFont.systemFont(ofSize: 22)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -40,7 +43,7 @@ class ViewController: UIViewController {
     
     let signInButton: UIButton = {
        let button = UIButton()
-        button.setTitle("Sign In", for: .normal)
+        button.setTitle("Кіру", for: .normal)
         button.backgroundColor = UIColor.orange
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 30
@@ -52,7 +55,7 @@ class ViewController: UIViewController {
     
     let signUpButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Sign Up", for: .normal)
+        button.setTitle("Тіркелу", for: .normal)
         button.backgroundColor = UIColor.clear
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 30

@@ -2,8 +2,8 @@
 //  AccountView.swift
 //  HotelApp
 //
-//  Created by Omar Thamri on 12/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
+
+
 //
 
 import UIKit
@@ -35,7 +35,7 @@ class AccountView: UIView, UIImagePickerControllerDelegate, UINavigationControll
     let fullNameLabel: UILabel = {
         let cnl = UILabel()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Full Name"
+        cnl.text = "Аты-жөні"
         cnl.font = UIFont.systemFont(ofSize: 13)
         cnl.translatesAutoresizingMaskIntoConstraints = false
         return cnl
@@ -44,7 +44,7 @@ class AccountView: UIView, UIImagePickerControllerDelegate, UINavigationControll
     let fullNameTf: UITextField = {
         let cnl = UITextField()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Omar Thamri"
+        cnl.text = "Zharqyn Qasym"
         cnl.borderStyle = .none
         cnl.font = UIFont.boldSystemFont(ofSize: 15)
         cnl.translatesAutoresizingMaskIntoConstraints = false
@@ -61,7 +61,7 @@ class AccountView: UIView, UIImagePickerControllerDelegate, UINavigationControll
     let mailLabel: UILabel = {
         let cnl = UILabel()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Email"
+        cnl.text = "Пошта"
         cnl.font = UIFont.systemFont(ofSize: 13)
         cnl.translatesAutoresizingMaskIntoConstraints = false
         return cnl
@@ -70,7 +70,7 @@ class AccountView: UIView, UIImagePickerControllerDelegate, UINavigationControll
     let mailTf: UITextField = {
         let cnl = UITextField()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "omarthamri@develop.com"
+        cnl.text = "dev@develop.com"
         cnl.borderStyle = .none
         cnl.font = UIFont.boldSystemFont(ofSize: 15)
         cnl.translatesAutoresizingMaskIntoConstraints = false
@@ -113,7 +113,7 @@ class AccountView: UIView, UIImagePickerControllerDelegate, UINavigationControll
     let cityLabel: UILabel = {
         let cnl = UILabel()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "City"
+        cnl.text = "Қала"
         cnl.font = UIFont.systemFont(ofSize: 13)
         cnl.translatesAutoresizingMaskIntoConstraints = false
         return cnl
@@ -122,7 +122,7 @@ class AccountView: UIView, UIImagePickerControllerDelegate, UINavigationControll
     let cityTf: UITextField = {
         let cnl = UITextField()
         cnl.textColor = UIColor.darkGray
-        cnl.text = "Tunis, Tunisia"
+        cnl.text = "Алматы, Қазақстан"
         cnl.borderStyle = .none
         cnl.font = UIFont.boldSystemFont(ofSize: 15)
         cnl.translatesAutoresizingMaskIntoConstraints = false
@@ -138,7 +138,7 @@ class AccountView: UIView, UIImagePickerControllerDelegate, UINavigationControll
     
     let saveChangesButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Save Changes", for: .normal)
+        button.setTitle("Өзгерістерді сақтау", for: .normal)
         button.backgroundColor = UIColor.orange
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 30

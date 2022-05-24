@@ -1,10 +1,4 @@
-//
-//  NavDrawerView.swift
-//  HotelApp
-//
-//  Created by Omar Thamri on 11/07/2019.
-//  Copyright © 2019 MACBOOK PRO RETINA. All rights reserved.
-//
+
 
 import UIKit
 
@@ -14,7 +8,7 @@ class NavDrawerView: UIView {
     var homeViewController: HomeViewController?
     var bookingViewController: BookingViewController?
     var accountViewController: AccountViewController?
-    let menuItems = [Menu(name: "Home",imageName: "home"),Menu(name: "Account",imageName: "account"),Menu(name: "Bookings",imageName: "booking"),Menu(name: "Transactions",imageName: "transaction"),Menu(name: "Wallet",imageName: "wallet"),Menu(name: "Messages",imageName: "message"),Menu(name: "Settings",imageName: "setting"),Menu(name: "Logout",imageName: "logout")]
+    let menuItems = [Menu(name: "Басты бет",imageName: "home"),Menu(name: "Аккаунт",imageName: "account"),Menu(name: "Брондау",imageName: "booking"),Menu(name: "Transactions",imageName: "transaction"),Menu(name: "Есепшот",imageName: "wallet"),Menu(name: "Хабарлама",imageName: "message"),Menu(name: "Settings",imageName: "setting"),Menu(name: "Шығу",imageName: "logout")]
     
     var headerView: UIView = {
         var hv = UIView()
@@ -35,7 +29,7 @@ class NavDrawerView: UIView {
     
     let nameLabel: UILabel = {
        let nl = UILabel()
-        nl.text = "Omar Thamri"
+        nl.text = "Zharqyn"
         nl.textColor = UIColor.white
         nl.font = UIFont.boldSystemFont(ofSize: 16)
         nl.translatesAutoresizingMaskIntoConstraints = false
@@ -44,7 +38,7 @@ class NavDrawerView: UIView {
     
     let mailLabel: UILabel = {
         let nl = UILabel()
-        nl.text = "omarthamri@develop.com"
+        nl.text = "dev@develop.com"
         nl.textColor = UIColor.white
         nl.font = UIFont.systemFont(ofSize: 14)
         nl.translatesAutoresizingMaskIntoConstraints = false
